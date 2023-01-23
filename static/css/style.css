@@ -142,8 +142,13 @@ body {
 
 .signin-btn {
   background: black;
+  border: 1px solid #1c1d1f;
   color: #fff;
   padding: 0 24px;
+}
+.signin-btn a{
+  color: #fff ;
+  text-decoration: none;
 }
 
 .signin-btn:hover {
@@ -455,6 +460,7 @@ body {
   align-items: center;
 }
 .section6 h2 {
+  max-width: none;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 24px;
@@ -471,6 +477,11 @@ body {
 }
 .partner-logo{
   justify-self: center;
+}
+.partner-logo img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 /* Section 7 */
 .section7{
@@ -490,7 +501,7 @@ body {
 .ud-img-desktop{
   display: flex;
   aspect-ratio: auto 400 / 400;
-  max-width: 100%;
+  max-width: 400px;
   vertical-align: middle;
 }
 .ud-busi-content{
@@ -609,6 +620,7 @@ body {
 }
 /* footer */
 footer{
+  display: none;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -689,4 +701,256 @@ footer{
 }
 
 @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 575px) {
+}
+@media screen and (max-width: 600px) {
+  /* section 4 */
+
+  .categories{
+    justify-content: center;
+  }
+   
+  /* section 5 */
+
+
+
+  /* section 6 */
+  .partner-logos-container{
+    list-style: none;
+    grid-auto-flow: initial;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 16px;
+  }
+  
+    .section7{
+    
+      justify-content: center;
+    }
+    .ud-img-mobile{
+      aspect-ratio: auto;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 auto 24px;
+      display: inherit;
+    }
+    .ud-busi-header{
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      align-self: center;
+      justify-self: center;
+    }
+    .ud-busi-title{
+      text-align: center;
+      font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      justify-self: center;
+      line-height: 1.35;
+      padding: 0;
+      margin: 0
+      ;
+    }
+    .ud-container{
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin: 0;
+    }
+    .ud-busi-content{
+      max-width: 100%;  
+      text-align: center;
+      justify-self: center;
+      margin-right: 0;
+      align-items: center;
+    }
+    .ud-busi-btn{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+    }
+    .section7 .btn{
+      width: 100%;
+      justify-content: center;
+      margin: 8px 6px
+    }
+    .lg-btn-o{
+      padding: 0;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:980px) {
+ /* Section 7 */
+   .section7{    
+      justify-content: center;
+    }
+    .ud-img-mobile{
+      aspect-ratio: auto;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 auto 24px;
+      display: inherit;
+    }
+    .ud-busi-header{
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      align-self: center;
+      justify-self: center;
+    }
+    .ud-busi-title{
+      text-align: center;
+      font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      justify-self: center;
+      line-height: 1.35;
+      padding: 0;
+      margin: 0;
+    }
+    .ud-container{
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin: 0;
+    }
+    .ud-busi-content{
+      max-width: 100vw;  
+      text-align: center;
+      justify-self: center;
+      margin-right: 0;
+      align-items: center;
+    }
+    .ud-busi-btn{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;      
+    }
+    .section7 .btn{
+      width: 50%;
+      justify-content: center;
+      margin: 8px 6px
+    }
+     .signin-btn{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+  footer{
+    padding: 0 24px;
+  }
+  .lang-selector{
+    padding: 24px 0;
+    display: block;
+  }
+  .footer-links-language{
+    display: block;
+  }
+  .footer-list{
+    padding: 0;
+    margin: 0;
+  }
+  .footer-link{
+    padding: 4px 0;
+  }
+  .logo-and-copyright{
+    display: block;
+    padding: 0;
+  }
+  .logo-container{
+    padding: 16px 0;
+  }
+  .copyright{
+    padding: 0 0 16px;
+  }
+}
+
+@media screen and (max-width:980px){
+       /* Section 8 */
+       .section8{
+        margin: 0;
+        padding: 64px 0;
+        margin-top: 64px;
+      }
+      .teach-ud{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 320; */
+      }
+      .teach-ud-img-container{
+        display: flex;
+        flex-direction: column;
+      }
+      .teach-ud-img{
+        margin: 0;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+      }
+      .teach-ud-body{
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 600px;
+        text-align: center;
+      }
+      .teach-ud-title{
+        
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
+      .teach-ud-content{
+        text-align: center;
+      }
+      .teach-ud-btn{
+        text-align: center;
+        justify-content: center;
+      }
+      .teach-ud-btn a{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .section8 .btn a{
+        width: 100%;
+        align-items: center;
+      }
+       .signin-btn{
+        margin: 0;
+        padding: 0;
+       }  
+       .teach-ud-learn{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+       }
+}
+
+@media screen and (max-width : 480px){
+
+  /* section 2 */
+  .section2{
+    text-align: center;
+  }
+  .sec2items{
+    flex-direction: column;
+
+  }
+  .sec2item{
+    margin: 12px 0;
+  }
+
+  /* section 6 */
+  .partners-container{
+    text-align: center;
+  }
+  
+
 }
