@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="static/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
   <div id="nav-div">
     <div class="mobile-nav">
@@ -42,21 +44,37 @@
 
         <div class="cate-dropdown">
           <button class="btn cat-btn">Categories</button>
-          <!-- <div class="dropdown-content">
+          <div class="dropdown-content">
             <ul>
-              <li>Course One</li>
-              <li>Course Two</li>
-              <li class="">Course Three
-                <div class="">
+              <li class="cate cate1">Cate One
+                <div class=" cate-drop cate1-dropdown">
                   <ul>
-                    <li>1</li>
+                    <li>one</li>
                     <li>2</li>
                     <li>3</li>
                   </ul>
                 </div>
               </li>
+              <li class="cate cate2">Cate two
+                <div class="cate-drop cate2-dropdown">
+                  <ul>
+                    <li>1</li>
+                    <li>two</li>
+                    <li>3</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cate cate3">Cate Three
+                <div class="cate-drop cate3-dropdown">
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>three</li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-          </div> -->
+          </div>
         </div>
 
         <div class="searchbar">
@@ -70,7 +88,7 @@
         <button class="btn ud-teach">Teach on Udemy</button>
 
         <button class="btn shopping-cart btn-round">
-          <i class="fa fa-shopping-cart" style="font-size: 20px ;"></i>
+          <i class="fa fa-cart-shopping" style="font-size: 20px ;"></i>
         </button>
         <button class=" btn lg-btn lg-btn-o">Log In</button>
         <button class="btn signin-btn">Sign Up</button>
@@ -98,274 +116,282 @@
       <div class="topic-container">
         <div class="topic-item">
           <button class="topic-title active-topic">
-             <span>Python</span>
+            <span>Python</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>Web Development</span>
+            <span>Web Development</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>Excel</span>
+            <span>Excel</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>AWS Cerified Solutions Architect - Associate</span>
+            <span>AWS Cerified Solutions Architect - Associate</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>JavaScript</span>
+            <span>JavaScript</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>React JS</span>
+            <span>React JS</span>
           </button>
         </div>
         <div class="topic-item">
           <button class="topic-title">
-             <span>Amazon AWS</span>
+            <span>Amazon AWS</span>
           </button>
         </div>
       </div>
-      <div class="course-carousel carousel1">
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg">
+      <div class="carousel-container">
+        <button type="button"
+          class="prev-btn"><span><i class="fa-solid fa-chevron-left"></i></span>
+        </button>
+        <div class="course-carousel carousel1">
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Learn Python: The Complete Python Programming Course</h3>
+              </div>
+              <div class="instructors">
+                Avinash Jain, The Codex</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.3</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(4732)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹3,399</h3>
+              </div>
+            </div>
           </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Learn Python: The Complete Python Programming Course</h3>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg">
             </div>
-            <div class="instructors">
-              Avinash Jain, The Codex</div>
-
-            <div class="rating">
-              <span class="rating-no">4.3</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(4732)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹3,399</h3>
+            <div class="main-content">
+              <div class="title">
+                <h3>Learning Python for Data Analysis and Visulaization Ver 1</h3>
+              </div>
+              <div class="instructors">
+                Jose Portilla</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.2</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(18,710)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹2,599</h3>
+              </div>
+              <div class="bestseller">
+                <div class="best">Bestseller</div>
+              </div>
             </div>
           </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Python for Beginners - Learn Programming from scratch</h3>
+              </div>
+              <div class="instructors">
+                Edwin Diaz, Coding Faculty Solutions</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.3</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(2,454)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹2,299</h3>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Learn Python: Python for Beginners</h3>
+              </div>
+              <div class="instructors">
+                Abrar Hussain</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.3</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(2,849)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹1,299</h3>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Python beyond the Basics - Object-Oriented Programming</h3>
+              </div>
+              <div class="instructors">
+                infinite Skills</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.3</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(2,991)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹2,299</h3>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Python From Scratch & Selenium WebDriver QA Automation 2022</h3>
+              </div>
+              <div class="instructors">
+                Admas Kinfu</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.6</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(2.454)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹3,499</h3>
+              </div>
+              <div class="bestseller">
+                <div class="best">Bestseller</div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Teach Your Kids to Code: Learn to Program Python at Any Age!</h3>
+              </div>
+              <div class="instructors">
+                Bryson Payne</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.4</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(9,150)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹1,299</h3>
+              </div>
+              <div class="bestseller">
+                <div class="best">Bestseller</div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-item">
+            <div class="thumbnail">
+              <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/535622_3bc0.jpg">
+            </div>
+            <div class="main-content">
+              <div class="title">
+                <h3>Python for Data Structures, Algorithms, and Interviews!</h3>
+              </div>
+              <div class="instructors">
+                jose Portilla</div>
+  
+              <div class="rating">
+                <span class="rating-no">4.4</span>
+                <span class="stars">
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa fa-star" style="color: #E59819;"></i>
+                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                </span>
+                <span class="reviews">(11,048)</span>
+  
+              </div>
+              <div class="price">
+                <h3>₹3,299</h3>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Learning Python for Data Analysis and Visulaization Ver 1</h3>
-            </div>
-            <div class="instructors">
-              Jose Portilla</div>
-
-            <div class="rating">
-              <span class="rating-no">4.2</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(18,710)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹2,599</h3>
-            </div>
-            <div class="bestseller">
-              <div class="best">Bestseller</div>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Python for Beginners - Learn Programming from scratch</h3>
-            </div>
-            <div class="instructors">
-              Edwin Diaz, Coding Faculty Solutions</div>
-
-            <div class="rating">
-              <span class="rating-no">4.3</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(2,454)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹2,299</h3>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Learn Python: Python for Beginners</h3>
-            </div>
-            <div class="instructors">
-              Abrar Hussain</div>
-
-            <div class="rating">
-              <span class="rating-no">4.3</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(2,849)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹1,299</h3>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Python beyond the Basics - Object-Oriented Programming</h3>
-            </div>
-            <div class="instructors">
-              infinite Skills</div>
-
-            <div class="rating">
-              <span class="rating-no">4.3</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(2,991)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹2,299</h3>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Python From Scratch & Selenium WebDriver QA Automation 2022</h3>
-            </div>
-            <div class="instructors">
-              Admas Kinfu</div>
-
-            <div class="rating">
-              <span class="rating-no">4.6</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(2.454)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹3,499</h3>
-            </div>
-            <div class="bestseller">
-              <div class="best">Bestseller</div>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Teach Your Kids to Code: Learn to Program Python at Any Age!</h3>
-            </div>
-            <div class="instructors">
-              Bryson Payne</div>
-
-            <div class="rating">
-              <span class="rating-no">4.4</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(9,150)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹1,299</h3>
-            </div>
-            <div class="bestseller">
-              <div class="best">Bestseller</div>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-item">
-          <div class="thumbnail">
-            <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/535622_3bc0.jpg">
-          </div>
-          <div class="main-content">
-            <div class="title">
-              <h3>Python for Data Structures, Algorithms, and Interviews!</h3>
-            </div>
-            <div class="instructors">
-              jose Portilla</div>
-
-            <div class="rating">
-              <span class="rating-no">4.4</span>
-              <span class="stars">
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa fa-star" style="color: #E59819;"></i>
-                <i class="fa-regular fa-star" style="color: #E59819;"></i>
-              </span>
-              <span class="reviews">(11,048)</span>
-
-            </div>
-            <div class="price">
-              <h3>₹3,299</h3>
-            </div>
-          </div>
-        </div>
+        <button type="button"
+          class="next-btn"><span><i class="fa-solid fa-chevron-right"></i></span></button>
       </div>
     </div>
     </div>
@@ -398,228 +424,227 @@
     <div class="section3">
       <div class="sec3-empty">
         <h2>Students are viewing</h2>
-        <div class="course-carousel">
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg">
-            </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>The Complete 2023 Web Development Bootcamp</h3>
+        <div class="carousel-container">
+          <button type="button"
+          class="prev-btn"><span><i class="fa-solid fa-chevron-left"></i></span></button>
+          <div class="course-carousel">
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg">
               </div>
-              <div class="instructors">
-                Dr. Angela Yu</div>
-
-              <div class="rating">
-                <span class="rating-no">4.7</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(256,406)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
-              </div>
-            </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/2776760_f176_10.jpg">
-            </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>100 Days of Code: The Complete Python Pro Bootcamp for 2023</h3>
-              </div>
-              <div class="instructors">
-                Dr. Angela Yu</div>
-
-              <div class="rating">
-                <span class="rating-no">4.3</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(170,891)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>The Complete 2023 Web Development Bootcamp</h3>
+                </div>
+                <div class="instructors">
+                  Dr. Angela Yu</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.7</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(256,406)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg">
-            </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>React - The Complete Guide (incl Hooks, React Router, Redux)</h3>
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/2776760_f176_10.jpg">
               </div>
-              <div class="instructors">Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller</div>
-
-              <div class="rating">
-                <span class="rating-no">4.3</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(174,116)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
-              </div>
-            </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/2196488_8fc7_10.jpg">
-            </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>Ultimate AWS Certified Solutions Architect Associate SAA-C03</h3>
-              </div>
-              <div class="instructors">
-                Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer</div>
-
-              <div class="rating">
-                <span class="rating-no">4.7</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(164,449)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>100 Days of Code: The Complete Python Pro Bootcamp for 2023</h3>
+                </div>
+                <div class="instructors">
+                  Dr. Angela Yu</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.3</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(170,891)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg">
-            </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>The Complete JavaScript Course 2023: From Zero to Expert!</h3>
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg">
               </div>
-              <div class="instructors">
-                Jonas Schmedtmann</div>
-
-              <div class="rating">
-                <span class="rating-no">4.7</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(164,848)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>React - The Complete Guide (incl Hooks, React Router, Redux)</h3>
+                </div>
+                <div class="instructors">Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.3</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(174,116)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg">
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/2196488_8fc7_10.jpg">
+              </div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>Ultimate AWS Certified Solutions Architect Associate SAA-C03</h3>
+                </div>
+                <div class="instructors">
+                  Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.7</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(164,449)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
+              </div>
             </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>The Complete Python Bootcamp From Zero to Hero in Pythone</h3>
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg">
               </div>
-              <div class="instructors">Jose Portilla</div>
-
-              <div class="rating">
-                <span class="rating-no">4.6</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(450,117)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,299</h3>
-              </div>
-              <div class="bestseller">
-                <div class="best">Bestseller</div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>The Complete JavaScript Course 2023: From Zero to Expert!</h3>
+                </div>
+                <div class="instructors">
+                  Jonas Schmedtmann</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.7</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(164,848)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="scroll-item">
-            <div class="thumbnail">
-              <img alt="" width="240" height="135"
-                src="https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg">
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg">
+              </div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>The Complete Python Bootcamp From Zero to Hero in Pythone</h3>
+                </div>
+                <div class="instructors">Jose Portilla</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.6</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(450,117)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,299</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="best">Bestseller</div>
+                </div>
+              </div>
             </div>
-            <div class="main-content">
-              <div class="title">
-                <h3>The Web Developer Bootcamp 2023</h3>
+            <div class="scroll-item">
+              <div class="thumbnail">
+                <img alt="" width="240" height="135" src="https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg">
               </div>
-              <div class="instructors">Colt Steele</div>
-
-              <div class="rating">
-                <span class="rating-no">4.7</span>
-                <span class="stars">
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa fa-star" style="color: #E59819;"></i>
-                  <i class="fa-regular fa-star" style="color: #E59819;"></i>
-                </span>
-                <span class="reviews">(253,316)</span>
-
-              </div>
-              <div class="price">
-                <h3>₹3,499</h3>
-              </div>
-              <div class="bestseller">
-                <div class="hi-rate">Highest rated</div>
+              <div class="main-content">
+                <div class="title">
+                  <h3>The Web Developer Bootcamp 2023</h3>
+                </div>
+                <div class="instructors">Colt Steele</div>
+  
+                <div class="rating">
+                  <span class="rating-no">4.7</span>
+                  <span class="stars">
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa fa-star" style="color: #E59819;"></i>
+                    <i class="fa-regular fa-star" style="color: #E59819;"></i>
+                  </span>
+                  <span class="reviews">(253,316)</span>
+  
+                </div>
+                <div class="price">
+                  <h3>₹3,499</h3>
+                </div>
+                <div class="bestseller">
+                  <div class="hi-rate">Highest rated</div>
+                </div>
               </div>
             </div>
           </div>
+          <button type="button"
+          class="next-btn"><span><i class="fa-solid fa-chevron-right"></i></span></button>
         </div>
       </div>
     </div>
@@ -975,5 +1000,7 @@
       </div>
     </div>
   </footer>
+
 </body>
+
 </html>

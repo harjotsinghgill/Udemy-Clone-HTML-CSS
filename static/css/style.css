@@ -1,9 +1,27 @@
+@font-face{
+  font-family: "udemy sans";
+  src: url("../fonts/Udemy-Sans-Regular-v1.ttf");
+}
+@font-face{
+  font-family: "udemy sans";
+  src: url("../fonts/Udemy-Sans-Bold-v1.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SuisseWorks";
+  src: url("../fonts/SuisseWorks-Bold-v1.ttf");
+}
+
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
 }
+
+
 
 html {
   font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
@@ -68,13 +86,50 @@ body {
   padding-left: 8px;
   font-size: 20px;
 }
-
-.cat-btn {
-  font-size: 12px;
-  height: 46px;
+.next-btn{
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 48px;
+  color: #fff;
+  background-color: #1c1d1f;
+  min-width: auto;
+  padding: 0 12px;
+  width: 48px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #6a6f73;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+  right: -24px;
+  top: 25%;
+}
+.prev-btn{
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 48px;
+  color: #fff;
+  background-color: #1c1d1f;
+  min-width: auto;
+  padding: 0 12px;
+  width: 48px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #6a6f73;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+  left: -24px;
+  top: 25%;
+  z-index: 1;
+}
+.cate-dropdown .cat-btn {
+  height: 72px;
   border: none;
   background-color: #fff;
   padding: 0 12px;
+  font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .btn {
@@ -85,7 +140,6 @@ body {
   height: 40px;
   border: none;
   background-color: #fff;
-  letter-spacing: -0.02rem;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 2.5px;
@@ -116,7 +170,7 @@ body {
 .searchbar {
   display: flex;
   width: auto;
-  height: 72px;
+  height: 48px;
   align-items: center;
   flex-basis: 100%;
 }
@@ -229,13 +283,29 @@ body {
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  top: 100%;
+  left: 0;
+  border: 1px solid #d1d7dc;
+}
+.cate1 {
+  position: relative;
+}
+.cate-drop{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #d1d7dc;
+  min-width: 150px;
+  z-index:1;
   top: 0%;
   left: 100%;
 }
-
-.dropdown-content li {
+.cate:hover .cate-drop{
   display: block;
 }
+
+
+
 
 .cate-dropdown:hover .dropdown-content {
   display: block;
@@ -284,6 +354,10 @@ body {
   padding: 0 24px;
   max-width: 1292px;
   margin: 0 auto;
+}
+.carousel-container{
+  
+  position: relative;
 }
 
 .section1 h2 {
@@ -1092,13 +1166,11 @@ footer {
     padding: 0;
     margin: 0;
   }
-
   .ud-container {
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0;
   }
-
   .ud-busi-content {
     max-width: 100vw;
     text-align: center;
@@ -1106,22 +1178,16 @@ footer {
     margin-right: 0;
     align-items: center;
   }
-
   .ud-busi-btn {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-
   .section7 .btn {
     width: 50%;
     justify-content: center;
     margin: 8px 6px;
-  }
-
-  .section7 .signin-btn {
-    /* width: 100%; */
   }
 }
 
