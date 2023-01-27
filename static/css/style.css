@@ -35,6 +35,38 @@ body {
   background-color: #fff;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 2.5px;
+  color: black;
+}
+
+.btn:hover {
+  color: #5624d0;
+}
+
+.round {
+  border-radius: 50px;
+  margin: 8px 0 0 8px;
+}
+
+.round a {
+  padding: 0 12px;
+  font-size: 16px;
+}
+
+.gray-width {
+  background-color: #f7f9fa;
+  width: 100%;
+}
+
+/* navbar */
 #nav-div {
   background: #fff;
   display: block;
@@ -128,38 +160,6 @@ body {
   background-color: #fff;
   padding: 0 12px;
   font-size: 14px;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  border: none;
-  background-color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 2.5px;
-  color: black;
-}
-
-.btn:hover {
-  color: #5624d0;
-}
-
-.round {
-  border-radius: 50px;
-  margin: 8px 0 0 8px;
-}
-
-.round a {
-  padding: 0 12px;
-  font-size: 16px;
-}
-
-.categories-mobile {
-  display: none;
-  flex-wrap: wrap;
-  padding: 0;
 }
 
 /* NavBar */
@@ -339,6 +339,7 @@ body {
   color: #1c1d1f;
   padding: 8px 16px;
 }
+
 .level2-heading{
   font-weight: 700;
   font-size: 14px;
@@ -386,6 +387,12 @@ body {
 }
 
 /* Section 1 */
+.section1 {
+  padding: 0 24px;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
 .section1 h2 {
   font-family: SuisseWorks, Georgia, Times, times new roman, serif,
     apple color emoji, segoe ui emoji, segoe ui symbol;
@@ -395,12 +402,6 @@ body {
 .section1 p {
   font-size: 20px;
   margin-bottom: 0;
-}
-
-.section1 {
-  padding: 0 24px;
-  max-width: 1340px;
-  margin: 0 auto;
 }
 
 .carousel-container {
@@ -463,7 +464,6 @@ body {
   grid-gap: 16px;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-snap-type: x mandatory;
 }
 
 .course-carousel::-webkit-scrollbar {
@@ -479,10 +479,11 @@ body {
   overflow: hidden;
 }
 
-.scroll-item:hover .popover-root {
-  display: block !important;
+.section1:hover .popover-root {
+  display: block;
 }
 
+/* popover */
 .popover-root {
   position: absolute;
   z-index: 1000;
@@ -585,12 +586,54 @@ body {
   min-width: 80px;
   padding: 0 12px;
   justify-content: center;
-  vertical-align: bottom;
   white-space: nowrap;
   height: 48px;
   color: #fff;
-  background-color: #8710d8;
+  background-color: #a435f0;
   width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.add-to-cart button:hover{
+  background-color: #8710d8;
+  color: #fff;
+}
+
+.wishlist-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.wishlist{
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 12px;
+  height: 48px;
+}
+
+.wishlist button{
+  
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: bottom;
+  white-space: nowrap;
+  height: 48px;
+  border: 1px solid #1c1d1f;
+  min-width: auto;
+  padding: 0 12px;
+  width: 48px;
+  border-radius: 50%;
+  color: #1c1d1f;
+  font-size: 20px;
+}
+
+.wishlist button:hover{
+  background-color: rgba(0,0,0,.04);
+  color: #1c1d1f;
 }
 
 .popover-arrow-container {
@@ -609,10 +652,10 @@ body {
   border-right: 10px solid rgb(255, 255, 255);
 }
 
+/* Scroll item contents */
 .thumbnail img {
   border: 1px solid #d1d7dc;
 }
-
 
 .main-content {
   width: 100%;
@@ -697,11 +740,6 @@ body {
 }
 
 /* section 2 */
-.gray-width {
-  background-color: #f7f9fa;
-  width: 100%;
-}
-
 .section2 {
   max-width: 1340px;
   margin: 0 auto;
@@ -773,6 +811,12 @@ body {
 
 .section4 h2 {
   margin-bottom: 24px;
+}
+
+.categories-mobile {
+  display: none;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .categories {
@@ -940,8 +984,7 @@ body {
 .ud-busi-title {
   max-width: 600px;
   margin-bottom: 16px;
-  font-family: SuisseWorks, Georgia, Times, times new roman, serif,
-    apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
@@ -1231,6 +1274,21 @@ footer {
     width: 96%;
     justify-content: center;
     margin: 8px 6px;
+  }
+}
+
+@media  screen and (max-width:930px) {
+  .cate2>.cate-link>i{
+    display: none;
+  }
+  .cate2>.cate-link+.cate-drop{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .section1:hover .popover-root{
+    display: none;
   }
 }
 
