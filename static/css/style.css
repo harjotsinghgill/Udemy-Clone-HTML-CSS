@@ -99,7 +99,7 @@ body {
 }
 
 .mobile-nav img {
-  margin-left: 72px;
+  margin-left: 42px;
 }
 
 .mobile-nav .menu {
@@ -929,6 +929,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.partners-container>h2{
+  padding-bottom: 8px;
+}
+.partners-container>p{
+  padding-bottom: 8px;
+  font-size: 16px;
+}
 
 .partner-logos-container {
   display: grid;
@@ -1032,7 +1039,7 @@ body {
 }
 
 .ud-busi-li-content {
-  font-size: 19px;
+  font-size: 18px;
   text-align: left;
   white-space: normal;
   flex: 1;
@@ -1097,7 +1104,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: 16px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .teach-ud-btn {
@@ -1236,6 +1243,7 @@ footer {
     justify-content: center;
     align-items: center;
     /* height: 320; */
+    padding: 16px;
   }
 
   .teach-ud-img-container {
@@ -1362,6 +1370,7 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0;
+    padding: 16px;
   }
 
   .ud-busi-content {
@@ -1532,6 +1541,7 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0;
+    padding: 16px;
   }
 
   .ud-busi-content {
